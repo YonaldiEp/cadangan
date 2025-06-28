@@ -256,7 +256,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Animasi Scroll dan Efek Parallax
 function initializeScrollAnimations() {
-    // Tambahkan efek parallax pada hero section
+    /*
+    // Kode parallax dinonaktifkan untuk menghindari konflik dengan 'background-attachment: fixed' di CSS
     const hero = document.querySelector('.hero');
     if (hero) {
         window.addEventListener('scroll', function() {
@@ -264,6 +265,7 @@ function initializeScrollAnimations() {
             hero.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
         });
     }
+    */
 
     // Tambahkan animasi fade-in untuk elemen saat di-scroll
     const animateOnScroll = function() {
