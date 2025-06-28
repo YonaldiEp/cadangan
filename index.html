@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Laris - Camilan Tradisional Modern</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@main/index.js"></script>
+    <meta name="google-site-verification" content="62E0emCsIASQYaSwutFJmVcXy-ateYCP3XvdkwjtL6E" />
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Toko Laris</h1>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="keranjang.html" class="cart-icon">🛒</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home" style="background-image: url('logotoko.png');">
+        <div class="container">
+            <h2>Camilan Tradisional Rasa Juara</h2>
+            <p>Rasakan kelezatan otentik dari berbagai daerah Indonesia.</p>
+            <a href="#produk" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section class="produk" id="produk">
+        <div class="container">
+            <h2>Produk Unggulan</h2>
+            <div class="produk-grid">
+                <div class="card">
+                    <img src="images/contoh.webp" alt="Tempe Goreng" />
+                    <div class="card-content">
+                        <h3>Tempe Goreng</h3>
+                        <p class="price">Rp8.000</p>
+                        <button onclick="addToCart('Tempe Goreng', 8000)" class="btn-add">Tambah ke
+                            Keranjang</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/contoh.webp" alt="Sale Keju" />
+                    <div class="card-content">
+                        <h3>Sale Keju</h3>
+                        <p class="price">Rp8.000</p>
+                        <button onclick="addToCart('Sale Keju', 8000)" class="btn-add">Tambah ke
+                            Keranjang</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/contoh.webp" alt="Wajit" />
+                    <div class="card-content">
+                        <h3>Wajit</h3>
+                        <p class="price">Rp8.000</p>
+                        <button onclick="addToCart('Wajit', 8000)" class="btn-add">Tambah ke
+                            Keranjang</button>
+                    </div>
+                </div>
+            </div>
+            <a href="produk.html" class="btn">Lihat Semua Produk</a>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <div class="container">
+            <div class="kontak-card-horizontal">
+                <div class="kontak-map-full">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.380444300665!2d107.52570365541992!3d-6.879208000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e445f794bbad%3A0xf1689bb9aadb89f!2sToko%20Laris!5e0!3m2!1sid!2sid!4v1746517174167!5m2!1sid!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="kontak-detail">
+                    <div class="kontak-info-item">
+                        <h3>📍 Alamat Kami</h3>
+                        <p>Jl. Gatot Subroto No. 62, Karangmekar, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                    </div>
+                    <div class="kontak-info-item">
+                        <h3>📞 Kontak</h3>
+                        <p> WhatsApp: <a href="https://wa.me/62813200354475" target="_blank">+62 813-2003-5475</a></p>
+                    </div>
+                    <div class="kontak-info-item">
+                        <h3>⏰ Jam Operasional</h3>
+                        <p>Senin - Minggu: 07.00 - 21.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Toko Laris. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+
+</body>
+
+</html>
