@@ -83,20 +83,19 @@
        NAVBAR
        ------------------------------- */
   .navbar {
-    background: white;
-    box-shadow: 0
-      2px
-      10px
-      rgba(
-        0,
-        0,
-        0,
-        0.1
-      );
+    background: transparent; /* DIUBAH: Latar belakang awal menjadi transparan */
+    box-shadow: none; /* DIUBAH: Hilangkan bayangan di awal */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease; /* DITAMBAHKAN: Transisi untuk efek halus */
+  }
+
+  /* DITAMBAHKAN: Style untuk navbar saat halaman di-scroll */
+  .navbar.navbar-scrolled {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
   .navbar
@@ -200,7 +199,7 @@
   text-align: center;
   background-size: cover; 
   background-position: center;
-  background-attachment: fixed; /* <-- TAMBAHKAN BARIS INI */
+  background-attachment: fixed; 
   
   display: flex;
   justify-content: center;
